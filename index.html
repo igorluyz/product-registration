@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Loja v1.0 BETA</h1>
+    </header>
+
+    <main>
+        <div class="title">
+            <h2>Cadastro de Produtos</h2>
+            <span>Cadastre seu produto!</span>
+        </div>
+
+        <div class="card">
+            <div class="lineInput">
+                <label for="produto">Produto</label>
+                <input type="text" id="nome-produto" placeholder="Nome do produto">
+            </div>
+
+            <div class="lineInput">
+                <label for="valor">Preço</label>
+                <input type="number" id="valor-produto" placeholder="Preço do produto">
+            </div>
+
+            <button id="btn-atualizar" onclick="produto.salvar()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <!-- thead - cabeçalho -->
+                <thead>
+                    <!-- th - nome dos nossos cabeçalhos -->
+                    <th class="center">ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <!-- tbody - vai ficar todo nosso conteúdo -->
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer-texto">Product registration</p>
+        <p class="copyrigth">Developed by &copy; Igor Luiz
+    </footer>
+    
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
